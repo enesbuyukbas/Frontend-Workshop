@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1669023414162-8b0573b9c6b2?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;  
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 50px 20px;
+        }
+        .card {
+            width: 300px;
+            background-color: #f4f4f4;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .card h3 {
+            margin-bottom: 15px;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .dvider {
+            text-align: center;
+            padding: 20px;
+        }
+        .contact {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .contact form input,
+        .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact form label {
+            color: white;
+            margin-bottom: 5px;
+        }
+        .contact form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        @media (max-width: 768px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+            .card {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+            nav{
+                justify-content: center;
+            }
+            .logo {
+                margin-bottom: 10px;
+                width: 100%;
+                text-align: center;
+            }
+            nav ul{
+                justify-content: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">LOGO</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <div>
+            <h1>Welcome to Our Website</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+            <button>Get Started</button>
+        </div>
+    </section>
+    <section class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="card-content">
+                <h2>Card Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="card-content">
+                <h2>Card Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="card-content">
+                <h2>Card Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+            </div>
+        </div>
+    </section>
+    <section class="dvider">
+        Get Your Dream Job
+    </section>
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
