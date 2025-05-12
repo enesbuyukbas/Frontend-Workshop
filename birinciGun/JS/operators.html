@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 10;
+        let b = 2;
+
+        console.log(a + b); // Addition
+        console.log(a - b); // Subtraction
+        console.log(a * b); // Multiplication
+        console.log(a / b); // Division
+        console.log(a % b); // Modulus
+
+        let x = 10;
+        x += 5; // x = x + 5
+        console.log(x); // 15
+
+        let y = 5
+        let z = "5"
+        console.log(y == z); // true (loose equality)
+        console.log(y === z); // false (strict equality) hem değer hem tür kontrolü yapar
+
+        let k = true;
+        let l = false;
+
+        console.log(k && l); // false (logical AND)
+        console.log(k || l); // true (logical OR)
+        console.log(!k); // false (logical NOT)
+
+        let stringType = "Enes";
+        let numberType = 24;
+        let booleanType = true;
+        let nullType = null;
+        let undefinedType;
+        let  NaNType = NaN;
+        console.log(typeof stringType); // string
+        console.log(typeof numberType); // number
+        console.log(typeof booleanType); // boolean
+        console.log(typeof nullType); // object (this is a known bug in JavaScript)
+        console.log(typeof undefinedType); // undefined
+        console.log(typeof NaN); // number (NaN is a special value in JavaScript)
+
+    </script>
+</body>
+</html>
